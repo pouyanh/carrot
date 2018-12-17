@@ -14,7 +14,7 @@ local lain = require("lain")
 local vicious = require("vicious") -- Vicious Widgets
 local freedesktop = require("freedesktop") -- Freedesktop.org menu and desktop icons support for Awesome WM
 
-local _t = awful.util.table or gears.table -- 4.{0,1} compatibility
+local _t = gears.table or awful.util.table -- 4.{0,1} compatibility
 local markup = lain.util.markup
 
 -- {{{ Actions
@@ -41,6 +41,46 @@ local function setScreenWallpaper(s)
     end
     gears.wallpaper.maximized(wallpaper, s, true)
   end
+end
+-- }}}
+
+-- {{{ Layouts Setup
+local function setupLayouts()
+  awful.layout.layouts = {
+    awful.layout.suit.floating,
+    awful.layout.suit.tile,
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile.top,
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.spiral,
+    awful.layout.suit.spiral.dwindle,
+    awful.layout.suit.max,
+    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.magnifier,
+    awful.layout.suit.corner.nw,
+    awful.layout.suit.corner.ne,
+    awful.layout.suit.corner.sw,
+    awful.layout.suit.corner.se,
+    lain.layout.cascade,
+    lain.layout.cascade.tile,
+    lain.layout.centerwork,
+    lain.layout.centerwork.horizontal,
+    lain.layout.termfair,
+    lain.layout.termfair.center,
+  }
+
+  -- Table of layouts to cover with awful.layout.inc, order matters.
+  lain.layout.termfair.nmaster = 3
+  lain.layout.termfair.ncol = 1
+  lain.layout.termfair.center.nmaster = 3
+  lain.layout.termfair.center.ncol = 1
+  lain.layout.cascade.tile.offset_x = 2
+  lain.layout.cascade.tile.offset_y = 32
+  lain.layout.cascade.tile.extra_padding = 5
+  lain.layout.cascade.tile.nmaster = 5
+  lain.layout.cascade.tile.ncol = 2
 end
 -- }}}
 
@@ -83,9 +123,9 @@ local function newScreenBuilder(tags, apps, builders)
       s.mytasklist, -- Middle widget
       { -- Right widgets
         layout = wibox.layout.fixed.horizontal,
+        mysystray,
         mykeyboardlayout,
         mybattery,
-        mysystray,
         mytextclock,
         s.mylayoutbox,
       },
@@ -103,14 +143,16 @@ local function newScreenBuilder(tags, apps, builders)
 end
 -- }}}
 
--- {{{ Widget Builders
+-- {{{ Widgets Builders
 -- Launcher
 local function newLauncherBuilder(menu)
   return (function(s)
-    local mylauncher = awful.widget.launcher({
-      image = beautiful.awesome_icon,
+    local launcher = awful.widget.launcher({
+      image = beautiful.awesome_icon or (awesome.icon_path .. "/awesome16.png"),
       menu = menu,
     })
+
+    return launcher
   end)
 end
 
@@ -210,7 +252,7 @@ local function newBatteryBuilder()
           perc = perc .. " plug"
         end
 
-        widget:set_markup(markup.fontfg("xos4 Terminus 8", "#aaaaaa", perc .. " "))
+        widget:set_markup(markup.fontfg(beautiful.font, "#aaaaaa", perc .. " "))
       end)
     })
 
@@ -234,7 +276,7 @@ local function newClockBuilder()
     clock.calendar = lain.widget.cal({
       attach_to = { clock },
       notification_preset = {
-        font = "xos4 Terminus 10",
+        font = beautiful.font,
         -- fg = theme.fg_normal,
         -- bg = theme.bg_normal,
         fg = "#aaaaaa",
@@ -266,10 +308,15 @@ local function newLayoutboxBuilder()
 end
 -- }}}
 
-local function setup(config)
+local function setup(config, menu)
+  -- Layouts
+  setupLayouts()
+
+  awful.util.tagnames = config.tags
+
   -- Builders
   local builders = {
-    launcher = newLauncherBuilder();
+    launcher = newLauncherBuilder(menu);
     taglist = newTaglistBuilder(config.mod);
     promptbox = newPromptboxBuilder();
     tasklist = newTasklistBuilder();
@@ -280,8 +327,6 @@ local function setup(config)
     layoutbox = newLayoutboxBuilder();
   }
   local screenBuilder = newScreenBuilder(config.tags, config.apps, builders)
-
-  -- awful.layout.layouts = ???
 
   -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
   screen.connect_signal("property::geometry", setScreenWallpaper)

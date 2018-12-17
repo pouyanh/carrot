@@ -1,3 +1,12 @@
+-------------------------------------------------------------
+--  Carrot launcher menu
+-------------------------------------------------------------
+--  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
+--  Licensed under the GNU General Public License v2:
+--  https://opensource.org/licenses/GPL-2.0
+-------------------------------------------------------------
+
+local awful = require("awful")
 local beautiful = require("beautiful") -- Theme handling library
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
@@ -5,7 +14,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 local function new(apps)
   local myawesomemenu = {
     { "hotkeys", function() return false, hotkeys_popup.show_help end},
-    { "manual", terminal .. " -e man awesome" },
+    { "manual", apps.terminal .. " -e man awesome" },
     { "edit config", apps.geditor .. " " .. awesome.conffile },
     { "restart", awesome.restart },
     { "quit", function() awesome.quit() end}

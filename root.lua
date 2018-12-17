@@ -12,7 +12,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 local menubar = require("menubar")
 local lain = require("lain")
 
-local _t = awful.util.table or gears.table -- 4.{0,1} compatibility
+local _t = gears.table or awful.util.table -- 4.{0,1} compatibility
 
 -- {{{ Actions
 local function toggle_wibox()

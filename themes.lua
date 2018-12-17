@@ -12,7 +12,7 @@ local awful = require("awful")
 local beautiful = require("beautiful") -- Theme handling library
 local Utils = require("carrot.utils")
 
-local getGlobalThemesDir = awful.util.get_themes_dir or gears.filesystem.get_themes_dir
+local getGlobalThemesDir = gears.filesystem.get_themes_dir or awful.util.get_themes_dir 
 
 local function getUserThemesDir()
   return os.getenv("HOME") .. "/.config/awesome/themes/"

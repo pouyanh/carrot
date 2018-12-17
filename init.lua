@@ -33,12 +33,13 @@ local function start()
   registerErrorHandlers()
 
   local conf = loadConfiguration()
+  local menu = Menus.New(conf.apps)
 
   Root.Setup(conf, menu)
 
   Themes.Apply(conf.theme)
   Clients.Setup(conf)
-  Screens.Setup(conf)
+  Screens.Setup(conf, menu)
 
   -- Autorun
   -- awful.util.spawn_with_shell("~/.config/awesome/autorun.sh")

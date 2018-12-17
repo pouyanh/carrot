@@ -11,7 +11,7 @@ local awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful") -- Theme handling library 
 
-local _t = awful.util.table or gears.table -- 4.{0,1} compatibility
+local _t = gears.table or awful.util.table -- 4.{0,1} compatibility
 
 -- {{{ Actions
 -- No border for maximized clients
