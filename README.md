@@ -1,8 +1,8 @@
 # :carrot: Carrot awesomeWM personalization application
 * Do you want to have a __light__ and __geeky__ desktop environment, full of tiny widgets, on your linux?
-* Have you ever wondered if you could configure [awesomeWM](https://awesomewm.org)
-without learning [lua](https://www.lua.org/)
-and reading [awful](https://awesomewm.org/doc/api/libraries/awful.layout.html) documents?
+* Have you ever wondered if you could configure [awesomeWM][awesomewm]
+without learning [lua][lua]
+and reading [awful][awful] documents?
 
 __Thanks God__, for creating :carrot:
 
@@ -34,14 +34,14 @@ WIBARS.TOP.WIDGETS launcher, taglist, promptbox, carrot_battery, keyboardlayout,
 
 ## Installation
 ### Prerequisites
-First you need to use [awesomeWM](https://awesomewm.org/) as your window manager
+First you need to use [awesomeWM][awesomewm] as your window manager
 
 ### AUR (Arch User Repository)
-If you're using [Arch Linux](https://www.archlinux.org/) install [awesome-carrot](https://aur.archlinux.org/packages/awesome-carrot)
-package from [AUR](https://wiki.archlinux.org/index.php/AUR)
+If you're using [Arch Linux][archlinux] install [awesome-carrot][aur-awesome-carrot]
+package from [AUR][aur]
 
 ### luarocks
-Install Carrot using lua package manager, [luarocks](https://luarocks.org/):
+Install Carrot using lua package manager, [luarocks][luarocks]:
 
 ```shell
 sudo luarocks install carrot
@@ -95,5 +95,13 @@ Configuration is discussed in [Configuration](#configuration)
 1. Fully customizable wibars
 
 ## License
-This software is licensed under the [GPL v3 licence][gpl].
-© 2018 Janstun
+This software is licensed under the [GPL v3 license][gpl]. © 2018 Janstun
+
+[awesomewm]: https://awesomewm.org/
+[lua]: https://www.lua.org/
+[awful]: https://awesomewm.org/doc/api/libraries/awful.layout.html
+[gpl]: http://www.gnu.org/copyleft/gpl.html
+[archlinux]: https://www.archlinux.org/
+[aur-awesome-carrot]: https://aur.archlinux.org/packages/awesome-carrot 
+[aur]: https://wiki.archlinux.org/index.php/AUR
+[luarocks]: https://luarocks.org/
