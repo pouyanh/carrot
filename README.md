@@ -1,7 +1,7 @@
-# Carrot awesome window manager personalization application
+# :carrot: awesome window manager personalization application
 Do you want to have a light and geeky desktop environment, full of tiny widgets, on your linux?
 Have you ever wondered if you could configure [awesome window manager](https://awesomewm.org) without learning lua and reading awesomeWM documents?
-Congratulations, Carrot is here!
+Congratulations, Carrot is here :carrot:!
 
 ## Contents
 * [Features](#installation)
