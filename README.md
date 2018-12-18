@@ -37,6 +37,7 @@ First you need to use [awesomeWM](https://awesomewm.org/) as your window manager
 
 ### AUR (Arch User Repository)
 If you're using [Arch Linux](https://www.archlinux.org/) install [awesome-carrot](https://aur.archlinux.org/packages/awesome-carrot)
+package from [AUR](https://wiki.archlinux.org/index.php/AUR)
 
 ### luarocks
 Install Carrot using lua package manager, [luarocks](https://luarocks.org/):

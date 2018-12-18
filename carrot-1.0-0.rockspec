@@ -4,6 +4,8 @@ source = {
   url = "git://github.com/pouyanh/carrot",
 }
 description = {
+  maintainer = "Pouyan Heyratpour <pouyan@janstun.com>",
+  homepage = "https://pouyanh.github.io/carrot",
   summary = "Carrot awesomeWM personalization application",
   detailed = [[
     * Do you want to have a light and geeky desktop environment, full of tiny widgets, on your linux?
@@ -11,13 +13,14 @@ description = {
 
     Thanks God, for creating Carrot
   ]],
-  homepage = "https://pouyanh.github.io/carrot",
   license = "GPL"
 }
 dependencies = {
   "lua >= 5.1"
 }
-supported_platforms = { "linux" }
+supported_platforms = {
+  "linux"
+}
 build = {
   type = "builtin",
   modules = {
