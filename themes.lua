@@ -10,8 +10,8 @@
 local gears = require("gears")
 local awful = require("awful")
 local beautiful = require("beautiful") -- Theme handling library
-local Utils = require("carrot.utils")
 
+local file_readable = gears.filesystem.file_readable or awful.util.file_readable
 local getGlobalThemesDir = gears.filesystem.get_themes_dir or awful.util.get_themes_dir 
 
 local function getUserThemesDir()
@@ -26,7 +26,7 @@ local function apply(name)
 
   local themePath = ""
   for k, v in pairs(themePaths) do
-    if Utils.FileExists(v) then
+    if file_readable(v) then
       themePath = v
 
       break
