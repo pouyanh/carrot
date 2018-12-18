@@ -1,0 +1,102 @@
+# Themes define colours, icons, font and wallpapers
+#
+# THEME <THEME-NAME>
+#
+# Default = default
+
+# THEME copland
+# THEME zenburn
+THEME multicolor
+
+# Wallpaper
+#
+# WALLPAPER <PATH>
+#
+# Default = (empty)
+
+# WALLPAPER /usr/share/awesome/themes/default/background.png
+
+# Primary modifier key
+#
+# MOD <KEY-NAME>
+#
+# Default = Mod4
+
+# MOD Mod4
+
+# Secondary modifier key
+#
+# ALT <KEY-NAME>
+#
+# Default = Mod1
+
+# ALT Mod1
+
+# Tag titles
+# First 9s are accessible directly via ModKey + 1..9
+#
+# TAGS <TAG1>, <TAG2>, <TAG3>, ...
+#
+# Default = 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+TAGS WEB, IDE, TERM, FILE, 5, 6, 7, BOOK, MUSIC, WINE, GAME
+
+# Applications
+#
+# APPS.<APP> <APP-NAME>
+#
+# Default:
+#   APPS.TERMINAL uxvt
+#   APPS.EDITOR vim
+#   APPS.geditor atom
+#   APPS.BROWSER firefox
+#   APPS.EXPLORER thunar
+#   APPS.LOCKER slock
+#   APPS.SHOTER scrot
+
+APPS.TERMINAL terminator
+APPS.GEDITOR gvim
+APPS.BROWSER firefox-developer-edition
+APPS.EXPLORER spacefm
+APPS.LOCKER xsecurelock
+APPS.SHOTER deepin-screenshot
+
+# Widget Bars
+# You can have more than one wibars
+# 
+# WIBARS.<WIBAR-NAME>.WIDGETS <WIDGET1>, <WIDGET2>, ...
+#
+# Default:
+#   WIBARS.TOP.POSITION top
+#   WIBARS.TOP.WIDGETS launcher, taglist, promptbox, tasklist, systray, keyboardlayout, textclock, layoutbox
+
+WIBARS.TOP.POSITION top
+WIBARS.TOP.WIDGETS launcher, taglist, promptbox, carrot_battery, keyboardlayout, systray, textclock
+
+WIBARS.BOTTOM.POSITION bottom
+WIBARS.BOTTOM.WIDGETS launcher, tasklist, layoutbox
+
+# Auto Startup Commands
+#
+# AUTOSTARTS.<TITLE>.COMMAND <COMMAND>
+# AUTOSTARTS.<TITLE>.TAGS <TAG1>, <TAG2>, <TAG3>
+#
+# Default = (empty)
+
+AUTOSTARTS.TERM.COMMAND terminator
+AUTOSTARTS.TERM.TAGS TERM
+
+AUTOSTARTS.IDE.COMMAND terminator -x vim
+AUTOSTARTS.IDE.TAGS IDE
+
+AUTOSTARTS.PASYSTRAY.COMMAND pasystray
+AUTOSTARTS.BLUEMAN.COMMAND blueman-applet
+
+AUTOSTARTS.CLEMENTINE.COMMAND clementine
+AUTOSTARTS.CLEMENTINE.TAGS MUSIC
+
+AUTOSTARTS.BROWSER.COMMAND firefox
+AUTOSTARTS.BROWSER.TAGS WEB
+
+AUTOSTARTS.SPACEFM.COMMAND thunar
+AUTOSTARTS.SPACEFM.TAGS FILE

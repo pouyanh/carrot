@@ -10,7 +10,8 @@
 local Utils = require("carrot.utils")
 
 local DEFAULT = {
-  theme = "multicolor",
+  theme = "default",
+  wallpaper = "",
   mod = "Mod4",
   alt = "Mod1",
   tags = {"1", "2", "3", "4", "Mid", "6", "7", "8", "9"},
@@ -22,6 +23,24 @@ local DEFAULT = {
     explorer = "thunar",
     locker = "slock",
     shoter = "scrot",
+  },
+  wibars = {
+    top = {
+      position = "top",
+      widgets = {
+        "launcher",
+        "taglist",
+        "promptbox",
+        "tasklist",
+        "systray",
+        "keyboardlayout",
+        "textclock",
+        "layoutbox",
+      }
+    }
+  },
+  autostarts = {
+    -- title = {command = "", tags = {1, 4, 7}}
   }
 }
 

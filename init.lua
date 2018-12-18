@@ -1,5 +1,5 @@
 -------------------------------------------------------------
---  Carrot: awesome-wm rc application
+--  Carrot main application
 -------------------------------------------------------------
 --  Licensed under the GNU General Public License v2:
 --  https://opensource.org/licenses/GPL-2.0
@@ -41,7 +41,8 @@ local function start()
   Clients.Setup(conf)
   Screens.Setup(conf, menu)
 
-  -- Autorun
+  -- TODO: Read autosrun apps from config and standard files and load them on
+  -- desired screens (tag them)
   -- awful.util.spawn_with_shell("~/.config/awesome/autorun.sh")
 end
 
