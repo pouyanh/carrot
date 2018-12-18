@@ -36,7 +36,7 @@ WIBARS.TOP.WIDGETS launcher, taglist, promptbox, carrot_battery, keyboardlayout,
 First you need to use [awesomeWM](https://awesomewm.org/) as your window manager
 
 ### AUR (Arch User Repository)
-If you're using [Arch Linux](https://www.archlinux.org/) install [awesome-carrot](#https://aur.archlinux.org/packages/awesome-carrot)
+If you're using [Arch Linux](https://www.archlinux.org/) install [awesome-carrot](https://aur.archlinux.org/packages/awesome-carrot)
 
 ### luarocks
 Install Carrot using lua package manager, [luarocks](https://luarocks.org/):
