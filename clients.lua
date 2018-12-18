@@ -2,14 +2,14 @@
 --  Carrot clients key bindings and rules
 -------------------------------------------------------------
 --  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
---  Licensed under the GNU General Public License v2:
---  https://opensource.org/licenses/GPL-2.0
+--  Licensed under the GNU General Public License v3:
+--  https://opensource.org/licenses/GPL-3.0
 -------------------------------------------------------------
 
 local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful") -- Theme handling library 
+local beautiful = require("beautiful") -- Theme handling library
 
 local _t = gears.table or awful.util.table -- 4.{0,1} compatibility
 

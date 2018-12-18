@@ -2,8 +2,8 @@
 --  Carrot launcher menu
 -------------------------------------------------------------
 --  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
---  Licensed under the GNU General Public License v2:
---  https://opensource.org/licenses/GPL-2.0
+--  Licensed under the GNU General Public License v3:
+--  https://opensource.org/licenses/GPL-3.0
 -------------------------------------------------------------
 
 local awful = require("awful")
@@ -38,7 +38,7 @@ local function new(apps)
   --    -- other triads can be put here
   --  }
   --})
-  
+
   return menu
 end
 

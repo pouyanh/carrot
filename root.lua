@@ -2,8 +2,8 @@
 --  Carrot root key bindings and rules
 -------------------------------------------------------------
 --  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
---  Licensed under the GNU General Public License v2:
---  https://opensource.org/licenses/GPL-2.0
+--  Licensed under the GNU General Public License v3:
+--  https://opensource.org/licenses/GPL-3.0
 -------------------------------------------------------------
 
 local gears = require("gears")
@@ -225,7 +225,7 @@ local function newKeyBindings(modkey, altkey, apps, menu)
     ),
 
     awful.key({ modkey, "Shift" }, "space", function ()
-        awful.layout.inc(-1) 
+        awful.layout.inc(-1)
       end,
       {description = "select previous", group = "layout"}
     ),

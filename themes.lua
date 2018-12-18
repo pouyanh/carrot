@@ -1,8 +1,8 @@
 -------------------------------------------------------------
 --  Carrot theming
 -------------------------------------------------------------
---  Licensed under the GNU General Public License v2:
---  https://opensource.org/licenses/GPL-2.0
+--  Licensed under the GNU General Public License v3:
+--  https://opensource.org/licenses/GPL-3.0
 -------------------------------------------------------------
 --  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
 -------------------------------------------------------------
@@ -12,7 +12,7 @@ local awful = require("awful")
 local beautiful = require("beautiful") -- Theme handling library
 
 local file_readable = gears.filesystem.file_readable or awful.util.file_readable
-local getGlobalThemesDir = gears.filesystem.get_themes_dir or awful.util.get_themes_dir 
+local getGlobalThemesDir = gears.filesystem.get_themes_dir or awful.util.get_themes_dir
 
 local function getUserThemesDir()
   return os.getenv("HOME") .. "/.config/awesome/themes/"

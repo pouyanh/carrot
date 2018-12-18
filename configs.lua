@@ -1,8 +1,8 @@
 -------------------------------------------------------------
 --  Carrot configuration library
 -------------------------------------------------------------
---  Licensed under the GNU General Public License v2:
---  https://opensource.org/licenses/GPL-2.0
+--  Licensed under the GNU General Public License v3:
+--  https://opensource.org/licenses/GPL-3.0
 -------------------------------------------------------------
 --  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
 -------------------------------------------------------------
@@ -46,12 +46,12 @@ local DEFAULT = {
 
 local function read(path)
   local conf = {}
-   
+
   fp = io.open(path, "r")
   if nil == fp then
     return {}
   end
-   
+
   for line in fp:lines() do
     line = line:match("%s*(.+)")
     -- Ignore commented lines
@@ -66,7 +66,7 @@ local function read(path)
         item[nxt] = item[nxt] or {}
         item = item[nxt]
       end
-     
+
       if not value then
         value = true
       else
@@ -83,7 +83,7 @@ local function read(path)
       item[last] = value
     end
   end
-   
+
   fp:close()
 
   return conf
