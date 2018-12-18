@@ -56,6 +56,7 @@ git clonet https://github.com/pouyanh/carrot.git
 
 ## Usage
 1. Start Carrot in awesomeWM config file: `~/.config/awesome/rc.lua`
+
 ```lua
 local Carrot = require("carrot")
 
@@ -65,6 +66,7 @@ Carrot.Start()
 ```
 
 2. Write configurations beside awesomeWM config file in: `~/.config/awesome/config`
+
 ```
 WALLPAPER multicolor
 ```
