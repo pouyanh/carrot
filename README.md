@@ -55,10 +55,19 @@ git clonet https://github.com/pouyanh/carrot.git
 ```
 
 ## Usage
-1. Start Carrot in awesomeWM config
-Use 
+1. Start Carrot in awesomeWM config file: `~/.config/awesome/rc.lua`
+```lua
+local Carrot = require("carrot")
 
-2. Configure it
+Carrot.Start()
+
+-- Nothing more is needed for normal usage in rc.lua
+```
+
+2. Write configurations beside awesomeWM config file in: `~/.config/awesome/config`
+```
+WALLPAPER multicolor
+```
 
 ## Todo
 1. Fully customizable wibars
