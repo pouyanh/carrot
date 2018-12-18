@@ -1,0 +1,7 @@
+-------------------------------------------------------------
+--  Carrot widgets platform
+-------------------------------------------------------------
+--  Copyright (c) 2018 Pouyan Heyratpour <pouyan@janstun.com>
+--  Licensed under the GNU General Public License v2:
+--  https://opensource.org/licenses/GPL-2.0
+-------------------------------------------------------------

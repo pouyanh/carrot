@@ -22,7 +22,7 @@ __Thanks God__, for creating :carrot:
 ```
 THEME zenburn
 WALLPAPER /usr/share/awesome/themes/default/background.png
-TAGS WEB, IDE, TERM, FILE, 5, 6, 7, BOOK, MUSIC, WINE, GAME
+TAGS WEB, IDE, TERM, FILE, 5, 6, 7, BOOK, MUSIC, WINE, GAME, 12
 
 APPS.TERMINAL terminator
 APPS.GEDITOR gvim
