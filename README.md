@@ -16,6 +16,7 @@ __Thanks God__, for creating :carrot:
 * [Usage](#usage)
 * [Configuration](#configuration)
 * [Todo](#todo)
+* [License](#license)
 
 ## Features
 * Lets awesomeWM to become configured using a lua agnostic configuration file like this:
