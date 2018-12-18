@@ -14,6 +14,7 @@ __Thanks God__, for creating :carrot:
     * [luarocks](#luarocks)
     * [git](#git)
 * [Usage](#usage)
+* [Configuration](#configuration)
 * [Todo](#todo)
 
 ## Features
@@ -70,6 +71,25 @@ Carrot.Start()
 ```
 WALLPAPER multicolor
 ```
+
+Configuration is discussed in [Configuration](#configuration)
+
+## Configuration
+
+|   Parameter   |         Description          |      Type     |          Default          |                     Example                      |
+|---------------|------------------------------|---------------|---------------------------|--------------------------------------------------|
+| THEME         | Theme name                   | string        | default                   | zenburn                                          |
+| WALLPAPER     | Background image filepath    | string        | (empty)                   | /usr/share/awesome/themes/default/background.png |
+| MOD           | Primary modifier key         | string        | Mod4                      | Mod4                                             |
+| ALT           | Secondary modifier key       | string        | Mod1                      | Mod1                                             |
+| TAGS          | Ordered list of tags         | array(string) | 1, 2, 3, 4, 5, 6, 7, 8, 9 | WEB, IDE, TERM, FILE, BOOK, MUSIC, WINE, GAME    |
+| APPS.TERMINAL | Default console/terminal     | string        | uxvt                      | terminator                                       |
+| APPS.EDITOR   | Default console editor       | string        | $EDITOR or vim            | nano                                             |
+| APPS.GEDITOR  | Default gui editor           | string        | atom                      | gvim                                             |
+| APPS.BROWSER  | Default internet browser     | string        | firefox                   | chromium                                         |
+| APPS.EXPLORER | Default file explorer        | string        | thunar                    | spacefm                                          |
+| APPS.LOCKER   | Default screen locker        | string        | slock                     | xsecurelock                                      |
+| APPS.SHOTER   | Defaylt screen capturer      | string        | scrot                     | deepin-screenshot                                |
 
 ## Todo
 1. Fully customizable wibars
