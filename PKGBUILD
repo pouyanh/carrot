@@ -1,7 +1,7 @@
 # Maintainer: Pouyan Heyratpour <pouyan@janstun.com>
 
 pkgname=awesome-carrot
-pkgver=1.0
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Carrot awesomeWM personalization application"
 arch=('any')
