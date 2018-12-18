@@ -10,7 +10,7 @@ __Thanks God__, for creating :carrot:
 * [Features](#installation)
 * [Installation](#installation)
     * [Prerequisites](#prerequisites)
-    * [AUR (Arch User Repository)](#aur-(arch-user-repository))
+    * [AUR (Arch User Repository)](#aur-arch-user-repository)
     * [luarocks](#luarocks)
     * [git](#git)
 * [Usage](#usage)
