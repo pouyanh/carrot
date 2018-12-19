@@ -70,7 +70,7 @@ Carrot.Start()
 2. Write configurations beside awesomeWM config file in: `~/.config/awesome/config`
 
 ```
-WALLPAPER multicolor
+THEME multicolor
 ```
 
 Configuration is discussed in [Configuration](#configuration)
