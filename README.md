@@ -53,7 +53,7 @@ Clone Carrot project into awesome configuration directory: ~/.config/awesome/
 
 ```shell
 cd ~/.config/awesome
-git clonet https://github.com/pouyanh/carrot.git
+git clone https://github.com/pouyanh/carrot.git
 ```
 
 ## Usage
