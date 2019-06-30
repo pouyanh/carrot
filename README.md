@@ -7,7 +7,7 @@ and reading [awful][awful] documents?
 __Thanks God__, for creating :carrot:
 
 ## Contents
-* [Features](#installation)
+* [Features](#features)
 * [Installation](#installation)
     * [Prerequisites](#prerequisites)
     * [AUR (Arch User Repository)](#aur-arch-user-repository)
