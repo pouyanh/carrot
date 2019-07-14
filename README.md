@@ -96,12 +96,12 @@ Configuration is discussed in [Configuration](#configuration)
 1. Fully customizable wibars
 
 ## License
-This software is licensed under the [GPL v3 license][gpl]. © 2018 Janstun
+This software is [licensed](LICENSE) under the [GPL v3 License][gpl]. © 2018 [Janstun][janstun]
 
 [awesomewm]: https://awesomewm.org/
 [lua]: https://www.lua.org/
 [awful]: https://awesomewm.org/doc/api/libraries/awful.layout.html
-[gpl]: http://www.gnu.org/copyleft/gpl.html
+[gpl]: https://www.gnu.org/licenses/gpl-3.0.en.html
 [archlinux]: https://www.archlinux.org/
 [aur-awesome-carrot]: https://aur.archlinux.org/packages/awesome-carrot 
 [aur]: https://wiki.archlinux.org/index.php/AUR
