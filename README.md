@@ -98,6 +98,7 @@ Configuration is discussed in [Configuration](#configuration)
 ## License
 This software is [licensed](LICENSE) under the [GPL v3 License][gpl]. © 2018 [Janstun][janstun]
 
+[janstun]: http://janstun.com
 [awesomewm]: https://awesomewm.org/
 [lua]: https://www.lua.org/
 [awful]: https://awesomewm.org/doc/api/libraries/awful.layout.html
