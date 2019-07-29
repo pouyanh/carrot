@@ -63,18 +63,20 @@ APPS.SHOTER deepin-screenshot
 
 # Widget Bars
 # You can have more than one wibars
-# 
+#
 # WIBARS.<WIBAR-NAME>.WIDGETS <WIDGET1>, <WIDGET2>, ...
 #
 # Default:
 #   WIBARS.TOP.POSITION top
 #   WIBARS.TOP.WIDGETS launcher, taglist, promptbox, tasklist, systray, keyboardlayout, textclock, layoutbox
 
-WIBARS.TOP.POSITION top
-WIBARS.TOP.WIDGETS launcher, taglist, promptbox, carrot_battery, keyboardlayout, systray, textclock
+WIBARS.AWBAR.LAYOUT xyz
+WIBARS.AWBAR.POSITION top
+WIBARS.AWBAR.WIDGETS launcher, taglist, promptbox, carrot_battery, keyboardlayout, systray, textclock
 
-WIBARS.BOTTOM.POSITION bottom
-WIBARS.BOTTOM.WIDGETS launcher, tasklist, layoutbox
+WIBARS.TASKBAR.LAYOUT abc
+WIBARS.TASKBAR.POSITION bottom
+WIBARS.TASKBAR.WIDGETS tasklist, layoutbox
 
 # Auto Startup Commands
 #
